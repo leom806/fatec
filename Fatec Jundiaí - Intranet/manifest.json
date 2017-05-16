@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Fatec Jundiaí - Intranet",
+  "version": "1.5.15.5",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+       "permissions": [
+        "tabs", "<all_urls>"
+      ],
+      "css": ["lib/sweet/sweetalert.css"],
+      "js": ["lib/jquery/jquery-2.1.3.min.js","lib/sweet/sweetalert.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "author": "Leonardo Momente",
+  "description": "Aquela ajudinha pra baixar os pdfs dos professores hein!",
+  "icons": { "16": "icons/icon16.png",
+           "48": "icons/icon48.png",
+          "128": "icons/icon128.png" }
+}
